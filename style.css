@@ -26,5 +26,50 @@ body{
 }
 
 header{
+    padding: 40px 0 30x;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo i{
+    height: 45px;
+    width: 45px;
+    background-color: rgb(255, 180, 242);
+    border-radius: 50%;
+    color:  rgb(161, 0, 135);
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding: 10px;
+    margin-right: 5px;
+    cursor: pointer;
+    text-align: center;
+
+}
+
+.logo .logo-text{
+    font-size: 40px;
+    font-weight: 700;
+    color:  rgb(161, 0, 135);
+
+
+}
+
+nav .togglebtn{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top:45px;
+    right: 3%;
+    z-index: 5;
+    cursor: pointer;
+
 
 }
