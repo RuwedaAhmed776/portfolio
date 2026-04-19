@@ -42,7 +42,7 @@
             </div>
 
             <div class="hero-text">
-                <h5> Hi I'm a    <span> Software engineer graduate</span></h5>
+                <h5> Hi I'm a    <span class="input"> Software engineer graduate</span></h5>
                 <h1>Ruweda Ahmed</h1>
 
                 <p>I like to code and make stuff. This is a working process will be done eventually.</p>
@@ -54,14 +54,39 @@
                 </div>
 
                 <div class="social">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>  
+                    <a href="https://www.linkedin.com/in/ruweda-ahmed-3b45a21b7/" target="_blank">
+                        <i class="fa-brands fa-linkedin"></i></a>
+
+                    <a href="https://github.com/RuwedaAhmed776" target="_blank">
+                        <i class="fa-brands fa-github"></i></a>  
 
                 </div> <!-- container -->
 
             </div> <!-- wrapper -->
 
         </div> <!-- hero-header -->
+        
+        <!--- Typed js for the text effect-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+
+        <script>
+            /** JavaScript for toggle button AKA FOR THE NAV BAR TO BE FOR MOBILE PPLS**/
+            var togglebtn = document.querySelector('.togglebtn');
+            var nav=document.querySelector('.navlinks');
+            var links =document.querySelector('.navlinks li');
+
+            togglebtn.addEventListener('click', function(){
+                this.classList.toggle('click');
+                nav.classList.toggle('open');
+            })
+
+            var typed=new Typed(".input", {
+                strings: ["Software engineer graduate", "Web developer", "Tech enthusiast"],
+                typeSpeed: 70,
+                backSpeed: 55,
+                loop: true
+            })
+        </script>
 
   </body>
 </html>
