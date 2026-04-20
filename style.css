@@ -322,3 +322,54 @@ nav .navlinks li a{
 
     margin-bottom: 10px;
 }
+
+.splash {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(135deg, #f8eef1, #e0c3fc);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    z-index: 9999;
+}
+/* GIF */
+.logo {
+    width: 140px;
+}
+
+/* Loading bar*/
+.loading-bar {
+    width: 200px;
+    height: 6px;
+    background: #ffb3ec;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* THE ANIMATION */
+.progress {
+    width: 0%;
+    height: 100%;
+    background: #ff8fcf;
+    animation: load 1s linear forwards;
+}
+
+/* SPLASH SCREEN TEXT */
+.logo-name {
+    color: rgb(218, 126, 198);
+    font-size: 39px;
+     font-family: 'Pacifico', cursive;
+}
+
+/* Animation */
+@keyframes load {
+    from { width: 0%; }
+    to { width: 100%; }
+}
