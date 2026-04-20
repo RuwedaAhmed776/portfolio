@@ -54,6 +54,11 @@ header{
 /*---------------------------------------------------------------------------------------------------------------------*/
 
 /* NAVBAR */
+
+nav {
+    margin-left: auto;
+}
+
 nav .togglebtn{
     width: 35px;
     height: 35px;
@@ -273,26 +278,25 @@ nav .navlinks li a{
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0px;
+
 }
 
-.logo-icon {
-    width: 45px;
-    height: 45px;
-    background: rgb(255, 180, 242);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    color: rgb(161, 0, 135);
+.logo img {
+    position: absolute;
+    top: 20px;     /* adjust */
+    left: 40px;    /* adjust */
+    width: 80px;   /* adjust size */
 }
 
 .logo-text {
+    font-family: 'Pacifico', cursive;
     font-size: 24px;
-    font-weight: 700;
-    color: rgb(161, 0, 135);
+    color: rgb(218, 126, 198);
+    margin-left: 0px; /* adjust to create space between logo and text */
 }
+
+
 
 .footer {
   position: fixed;
