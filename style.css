@@ -291,6 +291,9 @@ nav .navlinks li a{
 
 .logo-text {
     font-family: 'Pacifico', cursive;
+    position: absolute;
+    top: 40px;
+    left: 130px; /* adjust to position text next to logo */
     font-size: 24px;
     color: rgb(218, 126, 198);
     margin-left: 0px; /* adjust to create space between logo and text */
